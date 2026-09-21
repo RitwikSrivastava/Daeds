@@ -27,6 +27,9 @@ export default async function assetsInit() {
     // since this repo's assets are DM OpenAPI (urn:aaid:aem:...), not Scene7.
     externalImageUrlPrefixes: [
       ['https://delivery-p66302-e574366.adobeaemcloud.com/', createOptimizedPictureForDMOpenAPI],
+      // Customer-branded CNAME - URL shape is still DM OpenAPI (assets/urn:aaid:aem:.../as/...),
+      // not classic Scene7 (/is/image/...), despite the scene7.com domain, so same handler.
+      ['https://dmwoa-delivery.scene7.com/', createOptimizedPictureForDMOpenAPI],
     ],
   };
 }
