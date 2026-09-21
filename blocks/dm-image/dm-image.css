@@ -1,0 +1,13 @@
+.dm-image {
+  display: flex;
+  justify-content: center;
+}
+
+.dm-image picture {
+  max-width: 100%;
+}
+
+.dm-image img {
+  width: 100%;
+  height: auto;
+}
