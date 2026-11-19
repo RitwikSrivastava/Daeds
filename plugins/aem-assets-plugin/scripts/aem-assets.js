@@ -59,7 +59,7 @@ function isImageUrl(url) {
 function supportsSmartCrop(url) {
   if (!url) return false;
   const ext = getUrlExtension(url).toLowerCase();
-  
+
   // Smart crops work for raster images but not for excluded vector formats
   return !SMART_CROP_EXCLUDED_FORMATS.includes(ext) && IMAGE_FORMATS.includes(ext);
 }
@@ -291,7 +291,7 @@ export function createOptimizedPictureWithSmartcrop(
   breakpoints = [],
 ) {
   const isAbsoluteUrl = /^https?:\/\//i.test(src);
- // check if the image type supports smart cropping
+  // check if the image type supports smart cropping
   const canUseSmartCrop = supportsSmartCrop(src);
   // initialise breakpoint to project level smartcrop config unless needed to customise
   let smartcropBreakpoints = breakpoints;
