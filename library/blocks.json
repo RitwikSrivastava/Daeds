@@ -1,0 +1,31 @@
+{
+  "total": 6,
+  "offset": 0,
+  "limit": 6,
+  "data": [
+    {
+      "name": "Hero",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/hero"
+    },
+    {
+      "name": "Cards",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/cards"
+    },
+    {
+      "name": "Columns",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/columns"
+    },
+    {
+      "name": "DM Image",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/dm-image"
+    },
+    {
+      "name": "Fragment",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/fragment"
+    },
+    {
+      "name": "Widget",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/widget"
+    }
+  ]
+}

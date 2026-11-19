@@ -1,0 +1,9 @@
+.example-date {
+  padding: 24px;
+  border: 1px solid currentcolor;
+  border-radius: 8px;
+}
+
+.example-date time {
+  font-weight: 700;
+}
