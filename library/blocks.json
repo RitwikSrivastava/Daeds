@@ -1,7 +1,7 @@
 {
-  "total": 6,
+  "total": 7,
   "offset": 0,
-  "limit": 6,
+  "limit": 7,
   "data": [
     {
       "name": "Hero",
@@ -18,6 +18,10 @@
     {
       "name": "DM Image",
       "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/dm-image"
+    },
+    {
+      "name": "DM Carousel",
+      "path": "https://content.da.live/ritwiksrivastava/daeds/library/blocks/dm-carousel"
     },
     {
       "name": "Fragment",

@@ -12,6 +12,7 @@ store and register the library as described below.
 | Cards | [cards.html](blocks/cards.html) | `/library/blocks/cards` |
 | Columns | [columns.html](blocks/columns.html) | `/library/blocks/columns` |
 | DM Image | [dm-image.html](blocks/dm-image.html) | `/library/blocks/dm-image` |
+| DM Carousel | [dm-carousel.html](blocks/dm-carousel.html) | `/library/blocks/dm-carousel` |
 | Fragment | [fragment.html](blocks/fragment.html) | `/library/blocks/fragment` |
 | Widget | [widget.html](blocks/widget.html) | `/library/blocks/widget` |
 | Header | [nav.html](examples/nav.html) | `/nav` |
@@ -44,7 +45,7 @@ Sample CTA/navigation links such as `/getting-started`, `/contact`, and
    If `/nav` or `/footer` already has real content, retain it rather than
    replacing it just to try these examples.
 3. Create a **sheet** at `/library/blocks` with columns `name` and `path`.
-   Copy the six entries from the `data` array in [blocks.json](blocks.json).
+   Copy the entries from the `data` array in [blocks.json](blocks.json).
    The sheet and the `/library/blocks/` folder of documents are distinct
    resources. The JSON file is a catalogue reference, not a document to paste
    into the editor.
@@ -75,7 +76,7 @@ Hero, Cards, and Columns use the supplied public boilerplate PNG. They author
 it as an image, not a text link. EW/EDS may ingest or rewrite that image when
 processing the document.
 
-DM Image uses the supplied Dynamic Media delivery URL as a **link**, with its
+DM Image and DM Carousel use the supplied Dynamic Media delivery URL as a **link**, with its
 link text used as alternative text by the existing assets plugin. The project
 already registers this delivery host in
 `scripts/aem-assets-plugin-support.js`, and `decorateMain()` converts supported
@@ -85,7 +86,8 @@ That conversion also supports delivery links inside Hero and Columns. Cards,
 however, currently rebuilds pictures with the standard EDS image optimiser,
 which rewrites the DM query parameters and can discard DM-specific picture
 sources. Use ordinary images for Cards unless that implementation is updated.
-No block rendering code is changed by these examples.
+DM Carousel shares the Carousel implementation and preserves the converted
+Dynamic Media pictures. See [DM Carousel authoring](../blocks/dm-carousel/README.md).
 
 For replacement images, provide one entry per position:
 
